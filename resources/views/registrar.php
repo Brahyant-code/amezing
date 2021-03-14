@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,15 +28,15 @@
                             <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                     <br>
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" required>
                                     <br>
-                                    <input type="text" class="form-control" placeholder="Apellido">
+                                    <input type="text" class="form-control" placeholder="Apellido" required>
                                     <br>
-                                    <input type="text" class="form-control" placeholder="Nombre de la empresa">
+                                    <input type="text" class="form-control" placeholder="Nombre de la empresa" required>
                                     <br>
-                                    <input type="text" class="form-control" placeholder="Contraseña">
+                                    <input type="text" class="form-control" placeholder="Contraseña" required>
                                     <br>
-                                    <input type="text" class="form-control" placeholder="Confirmar contraseña">
+                                    <input type="text" class="form-control" placeholder="Confirmar contraseña" required>
                                 </div>
                                 <div class="col-md-6 col-xs-12">
                                 <center> <img id="imagenresgistrar" src="../../resources/iconosLogin/login.png" alt=""></center>
@@ -54,5 +53,4 @@
         </div>
     </div>
 </body>
-
 </html>
