@@ -28,28 +28,3 @@
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
     filter: none;
 }
-#subirFoto{
-    background-color: #f1f1f1;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    border-color: black;
-   
-    
-}
-label[for="subirFoto"] {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #106BA0;
-    display: inline-block;
-    transition: all .5s;
-    cursor: pointer;
-    padding: 15px 40px !important;
-    text-transform: uppercase;
-    width: fit-content;
-    text-align: center;
-    }
