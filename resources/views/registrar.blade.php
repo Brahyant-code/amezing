@@ -6,75 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo url('resources/css/registrar.css'); ?>">
+    <link rel="stylesheet" href="<?php echo url('resources/css/app.css'); ?>">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <title>Amezing | Crear cuenta</title>
 </head>
 
-<body>
+<body style="background-color: white;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <div id="tarjeta" class="card">
+            <div class="col-md-7 col-xs-12">
+                <div id="tarjeta1" class="card">
                     <div class="card-body">
                         <img id="logoRegistrar" src="<?php echo url('resources/iconosLogin/logoregistrar.gif'); ?>" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12">
-                <div id="tarjeta" class="card">
+            <div class="col-md-5 col-xs-12">
+                <div id="tarjeta2" class="card">
                     <div class="card-body">
-                    <form action="" method="POST" class="needs-validation" novalidate>
+                        <form action="" method="POST" class="needs-validation" novalidate>
                             <div class="row">
-                                    <div class="col-md-6 col-xs-12">
-                                        <br>
-                                        <div>
-                                            <input type="text" class="form-control" placeholder="Nombre" minlength="3" maxlength="15" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa un nombre valido.</div>
-                                        </div>
-                                        <br>
-                                        <div>
-                                            <input type="text" class="form-control" placeholder="Apellido" minlength="3" maxlength="15" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa un apellido valido.</div>
-                                        </div>
-                                        <br>
-                                        <div>
-                                            <input type="text" class="form-control" placeholder="Nombre de la empresa" minlength="3" maxlength="15" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa un nombre de empresa valido.</div>
-                                        </div>
-                                        <br>
-                                        <div>
-                                            <input type="email" class="form-control" placeholder="Correo" minlength="3" maxlength="25" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa un correo valido.</div>
-                                        </div>
-                                        <br>
-                                        <div>
-                                            <input type="password" class="form-control" placeholder="Contraseña" minlength="8" maxlength="8" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa una contraseña valida.</div>
-                                        </div>
-                                        <br>
-                                        <div>
-                                            <input type="password" class="form-control" placeholder="Confirmar contraseña" minlength="8" maxlength="8" required>
-                                            <div class="valid-feedback">Se ve bien!</div>
-                                            <div class="invalid-feedback"> Por favor ingresa una contraseña valida.</div>
-                                            <a id="linkIniciarSesion" href="{{route('home')}}">Iniciar sesión</a>
-                                        </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <br>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Nombre" minlength="3" maxlength="15" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa un nombre valido.</div>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
-                                        <center> <img id="imagenresgistrar" src="<?php echo url('resources/iconosLogin/fb-avatar.png'); ?>" alt=""></center>
-                                        <br>
-                                        <center><span class="btn btn-secondary btn-file">
-                                                Subir imagen <input type="file" accept="image/png,image/jpeg" id="subirImagen" onchange="previewImage();" required>
-                                            </span></center>
-                                        <button type="submit" id="buttonCrear" class="btn btn-success btn-lg">Crear</button>
-                                        <center><a id="linkIniciarSesion2" href="{{route('home')}}">Iniciar sesión</a></center>
+                                    <br>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Apellido" minlength="3" maxlength="15" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa un apellido valido.</div>
                                     </div>
+                                    <br>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Nombre de la empresa" minlength="3" maxlength="15" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa un nombre de empresa valido.</div>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <input type="email" class="form-control" placeholder="Correo" minlength="3" maxlength="25" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa un correo valido.</div>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <input type="password" class="form-control" placeholder="Contraseña" minlength="8" maxlength="8" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa una contraseña valida.</div>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <input type="password" class="form-control" placeholder="Confirmar contraseña" minlength="8" maxlength="8" required>
+                                        <div class="valid-feedback">Se ve bien!</div>
+                                        <div class="invalid-feedback"> Por favor ingresa una contraseña valida.</div>
+                                        <a id="linkIniciarSesion" href="{{route('home')}}">Iniciar sesión</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <center> <img id="imagenresgistrar" src="<?php echo url('resources/iconosLogin/fb-avatar.png'); ?>" alt=""></center>
+                                    <br>
+                                    <center><span class="btn btn-secondary btn-file">
+                                            Subir imagen <input type="file" accept="image/png,image/jpeg" id="subirImagen" onchange="previewImage();" required>
+                                        </span></center>
+                                    <button type="submit" id="buttonCrear" class="btn btn-success btn-lg">Crear</button>
+                                    <center><a id="linkIniciarSesion2" href="{{route('home')}}">Iniciar sesión</a></center>
+                                </div>
                             </div>
                         </form>
                     </div>
