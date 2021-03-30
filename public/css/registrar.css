@@ -1,125 +1,44 @@
-#tarjeta1{
-
-    width: 100%;
-    margin-top: 10%;
+#tarjeta1 {
+    width: 50%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     height: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
 }
-#tarjeta2{
-
-    width: 100%;
-    margin-top: 14%;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-    max-height: auto;
-}
-
-
-#logoRegistrar{
+#logoRegistrar {
     width: 100%;
     height: auto;
 }
-#imagenresgistrar{
-    margin-top: 12%;
-    width: 70%;
-    max-height: 135px;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-    border: 1px solid#918E8E;
-    padding: 0px;
+#buttonCrear {
+    background-color: #8cccaa;
+    border-color: #707070;
+    width: 100%;
 }
-
-#buttonCrear{
-    margin-top: 100%;
-    float: right;
-    background-color:#8CCCAA; 
-    border-color:#707070;
-    width: 70%;
-}
-#buttonCrear:hover{
-    background-color:#36e086; 
-    border-color:#707070;
+#buttonCrear:hover {
+    background-color: #36e086;
+    border-color: #707070;
     color: ivory;
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
     filter: none;
 }
-#linkIniciarSesion{
-    color: black;
-    margin-top: 32%;
-    float: left;
-}
-
-#linkIniciarSesion2{
-    
-    visibility: hidden;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-  }
-  .btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-  }
-
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #tarjeta1 {
-        margin-top: 5%;
         width: 100%;
-    }
-}
-@media screen and (max-width: 600px) {
-    #tarjeta2 {
-        margin-top: 5%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #imagenresgistrar {
-        margin-top: 7%;
-        width: 100%;
-        height: auto;
-        max-height: 250px;
         filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-        border: 1px solid#918E8E;
-        padding: 0px;
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
     }
 }
-
 @media screen and (max-width: 600px) {
     #buttonCrear {
-    margin-top: 10%;
-    float: right;
-    background-color:#8CCCAA; 
-    border-color:#707070;
-    width: 100%;
+        background-color: #8cccaa;
+        border-color: #707070;
+        width: 100%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    #linkIniciarSesion {
-        display: none;
-    }
+#btn-login {
+    color: black;
 }
-
-@media screen and (max-width: 600px) {
-    #linkIniciarSesion2{
-
-        visibility: visible;
-        color: black;
-        margin-top: 10%;
-
-    }
-}
-

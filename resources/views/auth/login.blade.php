@@ -8,7 +8,7 @@
             <div class="card" id="card">
                 <img id="Logo" src="{{ asset('iconosLogin/menup.jpg') }}" alt="escaner QR">
                 <div class="card-body">
-                    <p class="card-text" id="texto">Que tus clientes escaneen el codigo QR para que puedan ver tus platillos disponibles y favoritos en tu empresa !</p>
+                    <p class="card-text" id="texto">Que tus clientes escaneen el codigo QR para que puedan ver tus platillos disponibles y favoritos en tu empresa ¿No tienes cuenta? puedes <b><a id="btn-crear"  href="{{ route('register') }}">crear una aqui.</a></b></p>
                 </div>
             </div>
         </div>
@@ -48,10 +48,10 @@
                                 {{ __('¿Has olvidado la contraseña?') }}
                             </a></center>
                             @endif
-                            <center><input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                            <label class="form-check-label" for="remember">
+                           <center><input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <small class="form-check-label" for="remember">
                                 {{ __('Recordar mi cuenta') }}
-                            </label>
+                            </small>
                             </center>
 
                             

@@ -3,20 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-7 col-xs-12">
+        
+        <div class="col-md-12 col-xs-12">
             <div id="tarjeta1" class="card">
-                <div class="card-body">
-                    <img id="logoRegistrar" src="{{ asset('iconosLogin/logoregistrar.gif') }}" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5 col-xs-12">
-            <div id="tarjeta2" class="card">
                 <div class="card-body">
                     <form action="{{ route('register') }}" method="POST" class="needs-validation" novalidate>
                         @csrf
                         <div class="row">
-                            <div class="col-md-6 col-xs-12">
+                            <div class="col-md-12 col-xs-12">
                                 <br>
                                 <div>
                                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Nombre" required autocomplete="name" autofocus>
@@ -43,14 +37,10 @@
                                     <div class="invalid-feedback"> Por favor ingresa una contraseña valida.</div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xs-12">
-                                <center> <img id="imagenresgistrar" src="{{ asset('iconosLogin/fb-avatar.png') }}" alt=""></center>
+                            <div class="col-md-12 col-xs-12">
                                 <br>
-                                <center><span class="btn btn-secondary btn-file">
-                                        Subir imagen <input type="file" accept="image/png,image/jpeg" id="subirImagen" onchange="previewImage();">
-                                    </span></center>
                                 <button type="submit" id="buttonCrear" class="btn btn-success btn-lg">Crear</button>
-
+                                <center><br><small><a id="btn-login" href="{{ route('login')}}">Iniciar sesión</a></small></center>
                             </div>
                         </div>
                     </form>
